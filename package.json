@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./bin/server.js",
-    
-    "build:watch": "npm run build -- --watch"
-    
+    "build": "del-cli public && webpack --config webpack.config.dev.js --progress --profile",
+    "build:watch": "npm run build -- --watch",
+    "build:prod": "del-cli public && ngc -p tsconfig.aot.json && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js --progress --profile --bail && del-cli src/app/**/*.js src/app/**/*.ngfactory.ts src/app/**/*.js.map src/app/**/*.shim.ts src/app/**/*.ngsummary.json src/app/**/*.ngstyle.ts  src/polyfills.ngsummary.json"
   },
   "author": "Prateek Jain",
   "license": "",

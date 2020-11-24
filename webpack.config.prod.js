@@ -5,7 +5,7 @@ var ngw = require('@ngtools/webpack');
 
 const path = require('path');
 
-const API_ROOT = process.env.API_ROOT = 'INSERT_YOUR_ELASTIC_BEANSTALK_APP_URL_HERE';
+const API_ROOT = process.env.API_ROOT = 'http://notezyapp-env.eba-3midxft9.ap-south-1.elasticbeanstalk.com';
 const METADATA = webpackMerge(commonConfig.metadata, {
     API_ROOT: API_ROOT
 });
