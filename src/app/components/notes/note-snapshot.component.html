@@ -15,7 +15,7 @@
         </span>
         <span class="grey trash"
             (click)="deleteNote($event, note?.timestamp)"
-        ><i class="fas fa-trash-alt small"></i></span>
+        ><em class="fas fa-trash-alt small"></em></span>
     </h4>
     <p class="note-content">{{ note?.content }}</p>
     <p class="note-meta">{{ note?.timestamp * 1000 | date: 'short' }}</p>
