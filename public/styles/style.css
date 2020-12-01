@@ -10,9 +10,6 @@ body {
     margin-bottom: 0;
 }
 
-notes .inner-wrap {
-    margin-top: 30px;
-}
 
 .message-wrap {
     display: flex;
