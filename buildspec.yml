@@ -1,0 +1,17 @@
+version:0.2
+
+phases:
+    install:
+        runtime-versions:
+            nodejs: 10
+        commands:
+            - echo "installing nodejs"
+    pre_build:
+        commands:
+            - echo "hold on pre building"
+    build:
+        commands:
+            - echo "ist building now"
+    post_build:
+        commands:
+            -echo "build end phase"        
