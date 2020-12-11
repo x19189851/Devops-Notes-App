@@ -14,7 +14,7 @@ phases:
             - echo "ist building now"
     post_build:
         commands:
-            -echo "build end phase"        
+            - echo "build end phase"        
 
 
 
