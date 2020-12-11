@@ -34,7 +34,7 @@ var customAuth = function (req, res, next) {
         user_name = decoded.name;
         if(user_id) {
             //authentication successful
-            docClient =  new AWS.DynamoDB.DocumentClient();
+         docClient =  new AWS.DynamoDB.DocumentClient();
             next();
         } else {
             //unauthorized
