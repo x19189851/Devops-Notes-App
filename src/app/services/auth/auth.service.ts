@@ -59,7 +59,7 @@ export class AuthService {
         googleAuth.signOut().then(() => {
             localStorage.removeItem('id_token');
             this.router.navigate(['login']);
-            // window.location.reload();   
+              
         });
     }
 }
