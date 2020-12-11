@@ -6,7 +6,7 @@ var ngw = require('@ngtools/webpack');
 const path = require('path');
 
 const API_ROOT = process.env.API_ROOT = 
-'http://notezy.ap-south-1.elasticbeanstalk.com/';
+'http://notezy.ap-south-1.elasticbeanstalk.com';
 const METADATA = webpackMerge(commonConfig.metadata, {
     API_ROOT: API_ROOT
 });
