@@ -9,6 +9,7 @@ phases:
     pre_build:
         commands:
             - echo "hold on pre building"
+            - npm install 
     build:
         commands:
             - echo "ist building now"
