@@ -9,11 +9,11 @@ phases:
     pre_build:
         commands:
             - echo "hold on pre building"
-            - npm install 
+           
     build:
         commands:
             - echo "ist building now"
-            - ng build --prod
+            
     post_build:
         commands:
             - echo "build end phase"        
